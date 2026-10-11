@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>com.workslop.featureflags.experimental</string>
+	<key>PayloadUUID</key>
+	<string>77C984F9-9F70-4864-A095-1FAE0355D95F</string>
+	<key>PayloadDisplayName</key>
+	<string>WorkSlop FeatureFlags (experimental)</string>
+	<key>PayloadDescription</key>
+	<string>Experimental WorkSlop-generated configuration profile carrying a FeatureFlags payload. UNTESTED — effect on a retail iPhone is NOT proven; installation is likely rejected on ordinary devices.</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.system.featureflags</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>com.workslop.featureflags.experimental.payload</string>
+			<key>PayloadUUID</key>
+			<string>BCCED043-BE93-4F2A-834A-A77E93B8AB86</string>
+			<key>PayloadDisplayName</key>
+			<string>FeatureFlags (experimental)</string>
+			<key>PayloadDescription</key>
+			<string>Experimental FeatureFlags payload. UNTESTED on retail devices; the isAllowedToWriteFeatureFlags gate is intact on iOS 26.6.1, so installation will likely be rejected on ordinary devices.</string>
+			<key>Features</key>
+			<array>
+				<dict>
+					<key>Domain</key>
+					<string>com.apple.SwiftUI</string>
+					<key>FeatureName</key>
+					<string>SolariumForceFallback</string>
+					<key>Enabled</key>
+					<true/>
+				</dict>
+			</array>
+			<key>Disclosures</key>
+			<array/>
+			<key>Subscriptions</key>
+			<array/>
+		</dict>
+	</array>
+	<key>PayloadOrganization</key>
+	<string>Adnan.120hz</string>
+</dict>
+</plist>

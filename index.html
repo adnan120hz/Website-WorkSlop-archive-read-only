@@ -502,6 +502,7 @@
             </p>
             <div class="opening-links">
               <a href="#download">Get v14 ↓</a>
+              <a href="#profiles">Managed profiles ↓</a>
               <a href="#tested">What works and what doesn't ↓</a>
               <a href="https://github.com/adnan120hz/WorkSlop-Desktop-Version" target="_blank" rel="noopener">Read the source ↗</a>
             </div>
@@ -775,6 +776,59 @@
             release notes say the same thing I'm saying here.
           </p>
         </div>
+      </section>
+
+      <!-- ============ MANAGED PROFILES ============ -->
+      <section class="wrap doc" id="profiles">
+        <div class="doc-head">
+          <h2>Managed profiles</h2>
+          <p>
+            Two configuration profiles you can install straight from this page —
+            no computer, no app needed. They install side by side and don't
+            overwrite each other. iOS always asks you first; nothing here
+            installs silently.
+          </p>
+        </div>
+
+        <div class="changes">
+          <div class="change">
+            <h3>FeatureFlags profile <span class="status status-wait">Experimental · untested</span></h3>
+            <p>
+              A .mobileconfig carrying a "com.apple.system.featureflags"
+              payload. The payload key names (Features, Domain, FeatureName,
+              Enabled) are real strings from the iOS 26.6.1 firmware; the
+              feature entry inside is our best research guess and is
+              <strong>untested</strong>. The "isAllowedToWriteFeatureFlags"
+              gate is intact on iOS 26.6.1, so an ordinary iPhone will most
+              likely <strong>reject</strong> this profile at install. A
+              rejection is the expected outcome there — it means the gate did
+              its job, not that the file is broken.
+            </p>
+            <p>
+              <a href="profiles/workslop-featureflags.mobileconfig">Download workslop-featureflags.mobileconfig ↓</a>
+            </p>
+          </div>
+
+          <div class="change">
+            <h3>WorkSlop home-screen bookmark <span class="status status-on">Installs normally</span></h3>
+            <p>
+              A normal WebClip profile. Install it and a WorkSlop icon appears
+              on your home screen — tap it to open this website. It changes no
+              system setting, and you can delete it like any app icon.
+            </p>
+            <p>
+              <a href="profiles/workslop-webclip-bookmark.mobileconfig">Download workslop-webclip-bookmark.mobileconfig ↓</a>
+            </p>
+          </div>
+        </div>
+
+        <p class="dl-note">
+          How to install either one: download the file on your iPhone (or
+          AirDrop it over), open Settings → Profile Downloaded → Install,
+          confirm the prompts. If you installed the FeatureFlags one, reboot
+          afterwards — flags are read at launch, so a reboot is the only way
+          to judge any effect.
+        </p>
       </section>
 
       <!-- ============ DOWNLOAD ============ -->
