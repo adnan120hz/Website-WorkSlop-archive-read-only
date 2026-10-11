@@ -367,6 +367,8 @@
       }
       .s8box p { margin: 10px 0 0; color: var(--ink-2); line-height: 1.7; letter-spacing: 0.01em; font-size: 16px; }
       .s8box p strong { color: var(--ink); font-weight: 600; }
+      .s8box.good { border-left-color: var(--good); }
+      .s8box.good .s8tag { background: var(--good-wash); color: var(--good); }
 
       /* downloads — portrait rows */
       .dl { margin-top: 28px; border-top: 1px solid var(--rule); }
@@ -1083,18 +1085,15 @@
           </p>
         </div>
 
-        <div class="s8box">
+        <div class="s8box good">
           <div class="s8head">
-            <h3>iOS 27 — do not use v14</h3>
-            <span class="s8tag">iOS 27 · can bootloop</span>
+            <h3>iOS 27 — new method</h3>
+            <span class="s8tag">iOS 27 · proven</span>
           </div>
           <p>
-            <strong>Warning:</strong> v15 ships a new method for iOS 27 —
-            full backup → modify → full restore — proven successful on
-            iOS 26.6.1 RC (2 devices). v14 still uses the old route, which
-            <strong>can put your iPhone into a bootloop</strong> on iOS 27.
-            v14 is for iOS 26 — if your phone runs iOS 27, do not download
-            or apply v14 — use v15 from this page instead.
+            v15 ships a <strong>new method</strong> for iOS 27 — full backup
+            → modify → full restore — proven successful on iOS 26.6.1 RC
+            (2 devices).
           </p>
         </div>
 
@@ -1104,10 +1103,24 @@
             <span class="s8tag">disclaimer</span>
           </div>
           <p>
-            WorkSlop is most useful on iOS 26. The owner
+            WorkSlop is most useful on iOS 26. iOS 27 has <strong>not</strong>
+            been tested on a real device — use it at your own risk. The owner
             (<strong>Adnan.120hz</strong>) is <strong>not</strong> responsible
-            for any damage to your device or data — use your phone at your
-            own risk.
+            for any damage to your device or data.
+          </p>
+        </div>
+
+        <div class="s8box">
+          <div class="s8head">
+            <h3>iOS 27 — do not use v14</h3>
+            <span class="s8tag">iOS 27 · can bootloop</span>
+          </div>
+          <p>
+            <strong>Warning:</strong> v14 must <strong>not</strong> be used on
+            iOS 27 — it can put your iPhone into a
+            <strong>bootloop</strong>. v14 is for iOS 26 — if your phone runs
+            iOS 27, do not download or apply v14 — use v15 from this page
+            instead.
           </p>
         </div>
 
