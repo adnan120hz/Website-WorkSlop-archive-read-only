@@ -503,6 +503,8 @@
             <div class="opening-links">
               <a href="#download">Get v14 ↓</a>
               <a href="#profiles">Managed profiles ↓</a>
+              <a href="#journey">Version journey ↓</a>
+              <a href="#ios27">iOS 27 info ↓</a>
               <a href="#tested">What works and what doesn't ↓</a>
               <a href="https://github.com/adnan120hz/WorkSlop-Desktop-Version" target="_blank" rel="noopener">Read the source ↗</a>
             </div>
@@ -823,12 +825,147 @@
         </div>
 
         <p class="dl-note">
-          How to install either one: download the file on your iPhone (or
-          AirDrop it over), open Settings → Profile Downloaded → Install,
-          confirm the prompts. If you installed the FeatureFlags one, reboot
-          afterwards — flags are read at launch, so a reboot is the only way
-          to judge any effect.
+          How to install either one: tap the download link above — the file
+          goes straight to your iPhone. Then open Settings → Profile
+          Downloaded → Install and confirm the prompts. Your iPhone will ask
+          for your approval before installing the profile — nothing installs
+          silently. If you installed the FeatureFlags one, reboot afterwards —
+          flags are read at launch, so a reboot is the only way to judge any
+          effect.
         </p>
+      </section>
+
+      <!-- ============ PERJALANAN ============ -->
+      <section class="wrap doc" id="journey">
+        <div class="doc-head">
+          <h2>Perjalanan WorkSlop</h2>
+          <p>
+            Every release on record, from the earliest one (v3.0, 30 September
+            2026) to v15. Text cards only — the only real screenshots in this
+            repo are the v14 ones in the Screens section below, so nothing here
+            is illustrated with borrowed or generated images.
+          </p>
+        </div>
+
+        <div class="changes">
+          <div class="change">
+            <h3>v3.0 <span class="status status-wait">30 Sep 2026 · tag only</span></h3>
+            <p>Earliest release on record. Audit fixes; the version string becomes "WorkSlop Desktop v3.0". No release notes were published for this tag.</p>
+          </div>
+          <div class="change">
+            <h3>v3.1-dev <span class="status status-wait">1 Oct 2026 · tag only</span></h3>
+            <p>Sideload login progress work. No release notes were published for this tag.</p>
+          </div>
+          <div class="change">
+            <h3>v3.2-dev <span class="status status-wait">1 Oct 2026 · tag only</span></h3>
+            <p>Sideload logging and App Data work. No release notes were published for this tag.</p>
+          </div>
+          <div class="change">
+            <h3>v3.3-dev <span class="status status-wait">1 Oct 2026 · pre-release</span></h3>
+            <p>iOS 27 feature-flags research (the flag store moved to Settings.plist); the "Disable Solarium" master switch restored via .GlobalPreferences.plist; translator fixes with 57 new Indonesian translations; sideload session log.</p>
+          </div>
+          <div class="change">
+            <h3>v3.4 <span class="status status-on">1 Oct 2026 · stable</span></h3>
+            <p>First stable of the v3.4 line. Sideload menu removed; App Data back to read-only; honest support gating (unsupported features show as locked); new Liquid Glass menu on Home.</p>
+          </div>
+          <div class="change">
+            <h3>v3.5-dev <span class="status status-wait">1 Oct 2026 · pre-release</span></h3>
+            <p>Experimental Liquid Glass build: Fail Solarium Hardware Check (the one disable-direction key confirmed in the iOS 26.6.1 binary), per-app experiments, the real Tinted Glass setting. Honesty fixes on version gating.</p>
+          </div>
+          <div class="change">
+            <h3>v3.6-pre <span class="status status-wait">2 Oct 2026 · tag only</span></h3>
+            <p>Round 6: 71 audited candidates prepared. No release notes were published for this tag.</p>
+          </div>
+          <div class="change">
+            <h3>v4.0-pre <span class="status status-wait">2 Oct 2026 · developer only</span></h3>
+            <p>Developer-only pre-beta: 71 audited candidates (27 glass, 38 non-glass) for beta testers; 8 glass-adding candidates deleted permanently. Not for end users.</p>
+          </div>
+          <div class="change">
+            <h3>v10.0 <span class="status status-wait">2 Oct 2026 · pre-release</span></h3>
+            <p>Five-layer audit; MobileGestalt fail-closed gating; reset no longer writes zero-byte files on iOS 26.x; Apply Journal records every apply; new modern UI.</p>
+          </div>
+          <div class="change">
+            <h3>v11.0 <span class="status status-on">3 Oct 2026</span></h3>
+            <p>Liquid Glass back to the exact v4 implementation; Blurr Motion from a key found in the iOS 26.6.1 binary; research tweaks became normal tweaks; two interfaces — WorkSlop and classic Nugget.</p>
+          </div>
+          <div class="change">
+            <h3>v11.0.1 <span class="status status-on">3 Oct 2026</span></h3>
+            <p>Small focused update — no tweak changes.</p>
+          </div>
+          <div class="change">
+            <h3>v11.5 <span class="status status-on">3 Oct 2026</span></h3>
+            <p>Beta warning names the right iOS version; fixed the app closing itself on Linux/Wayland when dismissing the warning.</p>
+          </div>
+          <div class="change">
+            <h3>v14 <span class="status status-on">8 Oct 2026</span></h3>
+            <p>Big stability and honesty release: new UI; Custom Icons iOS 18 pack proven on a real device on iOS 26.6.1; Fake 5G label. S8 full-disable shipped here — then tested on a real phone and proven not to work, so it was abandoned.</p>
+          </div>
+          <div class="change">
+            <h3>v15 <span class="status status-on">10 Oct 2026 · current</span></h3>
+            <p>S8 removed; K2 SolariumForceFallback proven on-device, then its enable switch removed (the remover stays); managed profiles; the iOS 27 G1 apply engine; UI speed fixes; rounded iOS 18 icons. This is the build in the download section below.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ INFO iOS 27 ============ -->
+      <section class="wrap doc" id="ios27">
+        <div class="doc-head">
+          <h2>Info iOS 27 terbaru</h2>
+          <p>
+            What WorkSlop currently does — and doesn't do — on iOS 27.
+            Written 11 October 2026; this is the newest information on this page.
+          </p>
+        </div>
+
+        <div class="changes">
+          <div class="change">
+            <h3>Supported iOS 27 versions <span class="status status-on">G1 engine</span></h3>
+            <p>
+              The iOS 27 apply route only runs on: iOS 27.0 Developer Beta 1–9,
+              iOS 27.0 RC, iOS 27.0 stable, and iOS 27.0.1. Anything else is
+              refused with "Not supported" before anything is written to the
+              phone.
+            </p>
+          </div>
+          <div class="change">
+            <h3>How the iOS 27 method works <span class="status status-wait">G1 pipeline</span></h3>
+            <p>
+              Full backup of all the phone's data to the computer → a payload
+              file is built from whichever tweaks you enabled → the payload is
+              modified → the phone is restored from the modified backup. A
+              12-minute watchdog runs from the start of the backup and stops
+              the process safely if it runs over. A risk warning has to be
+              confirmed first — and the developer is not responsible for any
+              damage.
+            </p>
+          </div>
+          <div class="change">
+            <h3>Honest labels <span class="status status-wait">Read this</span></h3>
+            <p>
+              The G1 pipeline ran start to finish on two real devices on iOS
+              26.6.1 RC — user data stayed intact, and the result comes back to
+              the cable you use and how stable the iPhone–laptop connection is.
+              It has <strong>not</strong> been tested on a real iPhone running
+              iOS 27 yet. The FeatureFlags managed profile above is
+              <strong>untested</strong> on retail iPhones — the install gate is
+              intact on iOS 26.6.1, so expect it to be rejected there.
+            </p>
+          </div>
+        </div>
+
+        <div class="s8box">
+          <div class="s8head">
+            <h3>iOS 27 — do not use v14</h3>
+            <span class="s8tag">iOS 27 · can bootloop</span>
+          </div>
+          <p>
+            <strong>Warning:</strong> WorkSlop Desktop/Mobile v14 must
+            <strong>not</strong> be used on iOS 27 — it can put the iPhone into
+            a <strong>bootloop</strong>. One iPhone on iOS 27 bootlooped on v14
+            and was recovered via an IPSW restore from backup. Use the newest
+            build on this page instead.
+          </p>
+        </div>
       </section>
 
       <!-- ============ DOWNLOAD ============ -->
