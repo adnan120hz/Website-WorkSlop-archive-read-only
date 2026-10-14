@@ -567,6 +567,16 @@
             </p>
           </div>
           <div class="change">
+            <h3>Icon themes — 7 new tinted colors <span class="status status-on">New · v15.1</span></h3>
+            <p>
+              Mobile now has 10 icon tables: Light, Dark, Tinted, plus 7 new
+              tinted colors — Green, Yellow, Blue, White, Gray, Brown, and
+              Cream. Each color has its own table with all 51 icons. Every
+              table has a <strong>Select All</strong> button, or tap icons one
+              by one. Generated from the official catwithabaloon artwork.
+            </p>
+          </div>
+          <div class="change">
             <h3>Liquid Glass controls <span class="status status-on">Tested on device</span></h3>
             <p>
               Blur and motion changes for the glass interface in iOS 26, all on
@@ -931,15 +941,17 @@
             </p>
           </div>
           <div class="change">
-            <h3>How the iOS 27 method works <span class="status status-wait">G1 pipeline</span></h3>
+            <h3>How the iOS 27 method works <span class="status status-on">100% new</span></h3>
             <p>
               Full backup of all the phone's data to the computer → a payload
-              file is built from whichever tweaks you enabled → the payload is
-              modified → the phone is restored from the modified backup. A
-              12-minute watchdog runs from the start of the backup and stops
-              the process safely if it runs over. A risk warning has to be
-              confirmed first — and the developer is not responsible for any
-              damage.
+              is built from whichever tweaks you enabled (dozens of locations,
+              matched to your active tweaks) → the payload is injected into the
+              backup and verified byte-for-byte → the phone is restored from the
+              modified backup via a dedicated restore function written from
+              scratch for iOS 27 → reboot with notification. No sparse-restore
+              phase, no selective wipe, no leftover code from the old method.
+              A stall watchdog stops the process safely if the device goes
+              quiet. A risk warning has to be confirmed first.
             </p>
           </div>
           <div class="change">
