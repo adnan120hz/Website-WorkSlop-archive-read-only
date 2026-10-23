@@ -509,13 +509,19 @@
       }
       .phone-screen img { display: block; width: 100%; height: auto; }
       .island {
-        position: absolute; top: 6px; left: 50%; transform: translateX(-50%);
-        width: 36%; height: 11px; background: #05070a; border-radius: 999px; z-index: 2;
+        position: absolute; top: 7px; left: 50%; transform: translateX(-50%);
+        width: 34%; aspect-ratio: 3.35; background: #05070a; border-radius: 999px; z-index: 2;
+      }
+      .island::after {
+        content: ""; position: absolute; top: 50%; right: 11%;
+        transform: translateY(-50%); height: 52%; aspect-ratio: 1;
+        border-radius: 50%; background: #16202e;
+        box-shadow: inset 0 0 2px 1px rgba(90, 130, 190, .35);
       }
       .g-item .laptop { margin: 4px auto 0; }
       .phone-static { width: min(290px, 82vw); margin: 4px auto 0; }
       .phone-static .phone-screen { border-width: 8px; border-radius: 34px; }
-      .phone-static .island { top: 8px; height: 13px; }
+      .phone-static .island { top: 9px; }
 
       /* floating WorkSlop badges + sparkles around the hero devices */
       .badge {
@@ -1125,11 +1131,11 @@
 
         <div class="s8box">
           <div class="s8head">
-            <h3>iOS 27 — do not use v14</h3>
+            <h3>iOS 27 — do not use Desktop v14</h3>
             <span class="s8tag">iOS 27 · can bootloop</span>
           </div>
           <p>
-            <strong>Warning:</strong> WorkSlop Desktop/Mobile v14 must
+            <strong>Warning:</strong> WorkSlop Desktop v14 must
             <strong>not</strong> be used on iOS 27 — it can put the iPhone into
             a <strong>bootloop</strong>. One iPhone on iOS 27 bootlooped on v14
             and was recovered via an IPSW restore from backup. Use the newest
@@ -1269,14 +1275,14 @@
 
         <div class="s8box">
           <div class="s8head">
-            <h3>iOS 27 — do not use v14</h3>
+            <h3>iOS 27 — do not use Desktop v14</h3>
             <span class="s8tag">iOS 27 · can bootloop</span>
           </div>
           <p>
-            <strong>Warning:</strong> v14 must <strong>not</strong> be used on
+            <strong>Warning:</strong> Desktop v14 must <strong>not</strong> be used on
             iOS 27 — it can put your iPhone into a
-            <strong>bootloop</strong>. v14 is for iOS 26 — if your phone runs
-            iOS 27, do not download or apply v14 — use the current build
+            <strong>bootloop</strong>. Desktop v14 is for iOS 26 — if your phone runs
+            iOS 27, do not download or apply it — use the current build
             from this page instead.
           </p>
         </div>
