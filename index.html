@@ -103,18 +103,19 @@
       }
       header.scrolled { border-bottom-color: var(--rule-strong); }
       .nav {
-        display: grid;
-        grid-template-columns: 1fr auto;
+        display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 8px 16px;
         min-height: 60px;
         padding-top: 10px;
         padding-bottom: 10px;
       }
+      .brand-stack { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
       .brand {
         display: flex; align-items: center; gap: 10px;
         text-decoration: none; color: var(--ink);
-        justify-self: start; min-width: 0;
+        min-width: 0;
       }
       .brand-icon { width: 36px; height: 36px; flex: none; display: block; border-radius: 9px; }
       .brand-name {
@@ -128,7 +129,7 @@
         color: var(--faint); border: 1px solid var(--rule-strong);
         border-radius: 999px; padding: 3px 8px; white-space: nowrap;
       }
-      .social-links { display: flex; align-items: center; gap: 6px; justify-self: center; order: 3; grid-column: 1 / -1; justify-content: center; }
+      .social-links { display: flex; align-items: center; gap: 2px; margin-left: 34px; }
       .social-link {
         display: inline-flex; align-items: center; gap: 7px;
         color: var(--ink-2); text-decoration: none;
@@ -139,7 +140,7 @@
       }
       .social-link:hover { color: var(--ink); background: var(--panel); border-color: var(--rule-strong); }
       .social-link svg { width: 16px; height: 16px; flex: none; fill: currentColor; }
-      .header-actions { display: flex; align-items: center; gap: 9px; justify-self: end; }
+      .header-actions { display: flex; align-items: center; gap: 9px; flex: none; }
       .btn {
         display: inline-flex; align-items: center; gap: 8px;
         font-family: var(--font-sans);
@@ -551,6 +552,7 @@
   <body>
     <header id="site-header">
       <div class="wrap nav">
+        <div class="brand-stack">
         <a class="brand" href="#top" aria-label="WorkSlop home">
           <img class="brand-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0id3NUaWxlIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzJFOUJGRiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwQTRGRTAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjd3NUaWxlKSIvPgogIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSI1NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgIDxwYXRoIGQ9Ik04NCAxNjggTDEyNiAzNDQgTDE3NiAyMDYgTDIyNiAzNDQgTDI2OCAxNjgiLz4KICAgIDxwYXRoIGQ9Ik0zOTIgMTgyIEMzOTIgMTM4IDI5MCAxMzIgMjkwIDE5MCBDMjkwIDI0MCAzOTggMjM2IDM5OCAyOTIgQzM5OCAzNTAgMjgyIDM1MiAyODIgMzA2Ii8+CiAgPC9nPgo8L3N2Zz4K" alt="" width="36" height="36" />
           <span class="brand-name">WorkSlop</span>
@@ -566,6 +568,7 @@
             <span>Telegram</span>
           </a>
         </nav>
+        </div>
         <div class="header-actions">
           <a class="btn btn-primary btn-small" href="#download">Download</a>
           <a class="btn btn-ghost btn-small" href="https://github.com/adnan120hz/WorkSlop-Desktop-Version" target="_blank" rel="noopener">GitHub</a>
